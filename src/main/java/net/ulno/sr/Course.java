@@ -17,7 +17,12 @@ public class Course
     public boolean addStudent(Student student)
     {
         // you might want to check the parameter here
-        return students.add(student);
+        boolean changed = students.add(student);
+        if(changed && student != null) {
+             student.setCourse(this);
+        }
+
+        return changed;
     }
 
     public boolean removeStudent(Student student)

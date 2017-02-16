@@ -24,11 +24,46 @@ public class Student {
 
     public void setUniversity(University university)
     {
-        this.university = university;
+        if( this.university != university) {
+            University oldValue = this.university;
+            this.university = university;
+            if( oldValue != null ) {
+                oldValue.removeStudent( this );
+            }
+            if( university != null ) {
+                university.addStudent( this );
+            }
+        }
     }
 
     public University getUniversity()
     {
         return university;
     }
+
+    public Student withName(String name){
+        this.setName(name);
+        return this;
+    }
+
+    private Course course;
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course){
+        if(this.getCourse() != course){
+            Course oldValue = this.getCourse();
+            this.course = course;
+
+            if(oldValue != null){
+                oldValue.removeStudent(this);
+            }
+            if(course != null){
+                course.addStudent(this);
+            }
+        }
+    }
+
 }

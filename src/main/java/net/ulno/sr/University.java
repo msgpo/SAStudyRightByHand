@@ -14,13 +14,21 @@ public class University {
 
     public boolean addStudent(Student student)
     {
+        boolean changed = students.add( student );
+        if( changed && student != null ) {
+            student.setUniversity(this);
+        }
         // you might want to check the parameter here
-        return students.add(student);
+        return changed;
     }
 
     public boolean removeStudent(Student student)
     {
-        return students.remove(student);
+        boolean changed = students.remove(student);
+        if( changed && student != null ) {
+            student.setUniversity(null);
+        }
+        return changed;
     }
 
     // don't expose the concrete container class
