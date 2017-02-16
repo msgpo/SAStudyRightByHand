@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="ByHand" external.linked.project.path="$USER_HOME$/unison/work/teaching/courses/sa/2017spring/StudyRightByHand" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="StudyRight" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$USER_HOME$/unison/work/teaching/courses/sa/2017spring/StudyRightByHand">
+      <excludeFolder url="file://$USER_HOME$/unison/work/teaching/courses/sa/2017spring/StudyRightByHand/.gradle" />
+      <excludeFolder url="file://$USER_HOME$/unison/work/teaching/courses/sa/2017spring/StudyRightByHand/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

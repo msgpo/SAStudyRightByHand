@@ -1,0 +1,4 @@
+rootProject.name = 'byHand'
+include 'test1'
+rootProject.name = 'ByHand'
+
